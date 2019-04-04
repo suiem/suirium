@@ -156,6 +156,10 @@ section a {
   margin-right: 15px;
 }
 
+section a:hover {
+  text-decoration: none;
+}
+
 section div {
   margin-top: 70px;
   font-size: 14px;
