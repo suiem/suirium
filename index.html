@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>suirium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="やんわりデザイン">
+  <meta property="og:title" content="suirium">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://suirium.net">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'xcf0awq',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+
+    $(function(){
+      $('a[href^="#"]').click(function() {
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({scrollTop:position}, {duration: 'normal', easing: 'swing', });
+        return false;
+      });
+    });
+  </script>
+</head>
+
+<body>
+<div>
+  <header>
+    <ul>
+      <li><h1>SUIRIUM</h1></li>
+      <li><a href="http://suito15.tumblr.com/">作<span><br>った</span></a></li>
+      <li><a href="http://suito.hatenablog.com/">書<span><br>いた</span></a></li>
+      <li><a href="https://www.instagram.com/sui_em/">撮<span><br>った</span></a></li>
+      <li><a href="#profile">私<span><br>↓</span></a></li>
+    </ul>
+  </header>
+  <main>
+    <div class="visual"></div>
+    <section>
+      <h2 id="profile">伊藤 すい</h2>
+      <p>DTP、モバイルコンテンツのデザイナーを経てWebデザイナーに。</p>
+      <p>作ったり書いたりすることが好き。最近は3DCGやインタラクションに関心があります。</p>
+      <p>また、内向型であることや双極性障害を受け入れ、過ごしやすいシンプルな生活・生き方について考えています。</p>
+      <p>
+        <a href="https://twitter.com/sui_em">Twitter</a><a href="https://www.facebook.com/suzuka.em">Facebook</a>
+      </p>
+      <div>
+        <p>ご連絡はSNSやメールからどうぞ。<br>sui.em.sui [at] gmail.com</p>
+        <p>お仕事などのご相談については、当面は心身の調子を優先し、納期に余裕のあるものや単発のものなど、無理なくできる範囲でお話できますと幸いです。</p>
+      </div>
+    </section>
+  </main>
+  <footer> &copy; 2019 suirium</footer>
+</div>
+
+</body>
+</html>
